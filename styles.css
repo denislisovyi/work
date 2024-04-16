@@ -1,0 +1,567 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+    overflow: auto;
+}
+header.sticky::-webkit-scrollbar {
+    display: none;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /*background: rgb(46, 134, 193);*/
+    background: url("img/bg.jpg");
+    background-size: cover;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+body{
+	height: 500vh;
+}
+header{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height:100vh;
+	background: #000;
+	display: flex;
+	flex-direction: row;
+	transition: 1s;
+	z-index: 11;
+}
+header.sticky{
+  height: 100px;	
+}
+.logo:hover{
+	color:#fff;
+}
+.right_part .public table tbody {
+	border-color:red!important;
+	border-radius: 10px;
+    border: 1px solid #000;
+}
+p:hover{
+	cursor: default;
+}
+tr,td,h1,h2,h3,h4:hover{
+	cursor: default;
+}
+.logo_div span:nth-child(1) {
+    transform:rotate(0deg);
+}
+.logo_div span:nth-child(2) {
+    transform:rotate(90deg);
+}
+.logo_div span:nth-child(3) {
+    transform:rotate(180deg);
+}
+.logo_div span:nth-child(4) {
+    transform:rotate(270deg);
+}
+header .banner{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%!important;
+	height: 100%!important;
+	object-fit: cover;
+	transition: 1s;
+	transform: scaleX(50);
+	animation: banner_header 25s ease-in-out infinite;
+}
+
+header .logo{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	font-size:15vw;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: Lexend; 
+}
+header.sticky .logo{
+	position: absolute;
+	font-size: 3em;
+	left: 100px;
+	transform: translate(0%, -50%);
+	font-family: Lexend;
+	animation: logo_animation 25s ease-in-out infinite;
+}
+header .logo_div{
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header:not(.sticky) .logo_div{
+	width: 950px;
+	height: 200px;
+	position: relative;
+    top:40%;
+    left:20%;
+    overflow: visible!important; 
+}
+header .logo_img{
+	display: none;
+}
+header.sticky .banner{
+	opacity: 0.8;
+}
+header.sticky .time{
+	z-index: 100;
+	position: absolute;
+	right: 100px;
+	text-shadow: #fff 2px 0 2px;
+}
+.main_container{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
+}
+.main{
+	width: 100%;
+	z-index: 1;
+	height: 580vh;
+	position: relative;
+	/*background-image: url("img/fon.jpg")!important;*/
+	background: #fff;
+	display: flex;
+	flex-direction: row;
+	margin-top: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.main { 
+   background-image: url('img/fon.jpg'); 
+   background-attachment: fixed; 
+   background-position: center; 
+   background-repeat: no-repeat; 
+   background-size: cover; 
+   animation: bg-animation 25s infinite alternate; /* Додаємо анімацію з назвою 'parallax', тривалістью 25 секунд, безкінечною, змінюючи напрямок кожного разу */ 
+   } 
+
+.left_part{
+	width: 50%;
+	height: 300vh;
+}
+.main .left_part div{
+ 	width: 100%;
+ 	height: 540px;
+ 	border: 2px solid #2E86C1;
+ 	border-left:none;
+ 	border-top:none;
+}
+.main .right_part{
+ 	width: 50%;
+ 	border: 2px solid;
+ 	border-image: url("img/bg.jpg");
+ 	border-right: none;
+ 	border-top: none;
+ 	border-bottom: none;
+}
+.footer{
+	width: 100%;
+	z-index: 1;
+	height: 150px;
+	background-image: url("img/bg.jpg");
+	display: flex;
+	flex-direction: column;
+	animation: bg-animation 25s ease-in-out infinite;
+}
+.footer_main{
+	width: 100%;
+	height: 70%;
+}
+.footer_end{
+	width: 100%;
+	height: 30%;
+	transform: translateY(-10px);
+}
+.footer_end p{
+	color:#fff;
+	margin-left: 50px;
+    font-family: Lexend;
+    font-size: 16pt;
+}
+header .logo_img{
+	width: 150px;
+	height: 100px;
+	margin-left: 50px;
+}
+.pc{
+	width: 100%!important;
+}
+.pc_h{
+	text-align: center;
+	color:#2E86C1;
+	font-size: 20pt;
+	font-family:Oswald;
+}
+table{
+	border-color:#2E86C1;
+	font-family:Oswald;
+	width: 100%;
+	margin-right: 15px;
+	border-collapse: collapse;
+	height: 90%!important;
+}
+textarea{
+	font-family:Oswald;
+	color:#2E86C1;
+	font-size: 12pt;
+	padding: 10px;
+	letter-spacing: 0.02em;
+	border:2px solid #2E86C1;
+	background:none;
+}
+textarea:hover ,:active, :focus{
+	border-color:red;
+    border:2px solid red;
+    cursor:pointer;
+}
+header .time{
+	display: none;
+}
+textarea{
+	height: 300px!important;
+}
+header.sticky .time{
+	display: block;
+}
+table caption{
+	font-family:Oswald;
+}
+table tr th{
+	font-family:Oswald;
+	height:50px!important;
+}
+tr td:first-child {
+    color: red;
+    text-align: center;
+}
+.result_text{
+    font-family:Oswald;
+}
+.calculator button{
+	margin-top:10px;
+	width:10vw;
+	color: #2E86C1;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:5vh;
+}
+:hover.calculator button{
+	color:red;
+}
+.weather_div{
+	width: 50vw;
+	height: 50vh;
+	z-index:10!important;
+}	
+.last_textarea{
+	height: 400px!important;
+}
+textarea{
+	resize: none;
+}
+.calculator { 
+	padding: 50px auto;
+    margin-left: 20px;	
+	margin-top: 20px;
+} 
+input, button { 
+	padding-bottom: 10px; display: block;
+	font-family:Oswald!important;
+	background:none;
+	border-radius:5px;
+	padding-left:10px;
+	padding-top:5px;
+	border-color:#2E86C1;
+} 
+#result { 
+	padding-top: 20px;
+	font-family:Oswald;
+}
+tr td{
+	text-align: center!important;
+	width: 100px;
+	height: 30px!important;
+	font-size: 15pt;
+}
+.p_text{
+	font-size: 18pt;
+	font-family:Oswald;
+	margin-left: 20px; 
+}
+.left_part a{
+	text-decoration: none;
+	margin-left: 20px;
+	font-size: 20px;
+	color:purple!important;
+	font-family:Oswald;
+	font-family: Lexend;
+}
+#weather img{
+    width: 125px;
+    position: relative;
+	bottom:17vh;
+	left:13vw;
+	padding-top: 4vh;
+	padding-bottom: 10px;
+}
+.footer_main .weather_div{
+	font-size: 12pt;
+	color: white;
+	font-family:Oswald;
+	width:50vw;
+	position: relative;
+	left: 35vw;
+}
+
+.footer_main{
+   display: flex;
+}   
+.left_part a:hover{
+	color:red!important;
+}
+.scale a{
+	font-family:Oswald;
+}
+.pc a{
+	font-family:Oswald;
+}
+.phone a{
+	font-family:Oswald;
+	color:#2E86C1;
+}
+.time{
+	font-size: 20pt;
+	color:red!important;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	margin:20px 30px 20px 0;
+	font-family: Lexend;
+}
+.checkout a{
+	font-family:Oswald;
+}
+.time_f{
+	font-size: 20pt;
+	color:#fff!important;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	margin-top:20px;
+    transform: translateX(80vw);
+	font-family: Lexend;	
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:not(.logo):after {
+    background-color: red;
+    display: block;
+    content: "";
+    height: 3px;
+    margin-top: 5px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    border-radius: 50%;
+}
+ a:hover:after,
+ a:focus:after {
+    width: 100%;
+}
+a:hover{
+	color:red;
+	border:none!important;
+}
+.logo{
+	border:none!important;
+}
+@media(max-width: 768px){
+	.main{
+		display: flex;
+		flex-direction: column;
+		max-height: 1000vh;
+		height: 955vh;
+		pading-right: 10px;
+		pading-left: 10px;
+		margin-top:250px;
+	    animation: none;
+	    background-size: cover;
+	}
+	.time_f{
+		transform: translateX(50vw);
+	}
+	.weather_div{
+		width: 150px!important;
+		left: -95px!important;
+	}
+	#weather img{
+	   padding-top: 0;
+	   padding-bottom: 0;
+    }
+	.weather_div h1{
+		font-size: 13px;
+	}
+	.weather_div #weather p {
+		font-size: 12px!important;
+	}
+	.weather_div #weather img {
+		width: 45px;
+		height: 45px;
+		position: relative;
+		left: 35vw!important;
+		bottom: 7vh!important;
+	}
+	.footer_end p{
+	  padding-left: 35vw;
+	  padding-top: 2vh;
+	}
+	header{
+		background: none;
+		opacity: 1;
+	}
+	header.sticky {
+		height: 250px;
+		transition: 0.3s;
+		object-fit: cover;
+		opacity: 1;
+	}
+	header.sticky .logo{
+		position: relative;
+		transform: translateY(-120px) translateX(-70px);
+	}
+	header.sticky .banner{
+		height: 120px!important;
+		object-fit: cover;
+		opacity: 1;
+		background: none;
+	}
+	header.sticky .time{
+		transform: translateY(-15px) translateX(70px);
+	}
+	.left_part{
+		width: 100%;
+		margin-top: 100px;
+	}
+	.main .left_part div{
+ 		width: 100%;
+ 		height: 1000px;
+ 		border-right: none;
+	}
+	.right_part{
+		width: 90%!important;
+		margin-top:900vh;
+		overflow: hidden;
+		display: none;
+
+	}
+    .public table{
+    	display: none;
+    }
+    header.sticky .time{
+    	position: absolute;
+    	top:40px;
+    }
+    .p_text{
+    	width: 90vw;
+    }
+}
+@keyframes bg-animation {
+    0% {
+        background-size: 120%;
+        background-position: 50% 50%
+    }
+    20% {
+        background-size: 150%;
+        background-position: 0 50%;
+    }    
+    40% {
+        background-size: 110%;
+        background-position: 20% 80%;
+    }
+    60% {
+        background-size: 160%;
+        background-position: 60% 10%;
+    }
+    80% {
+        background-size: 120%;
+        background-position: 40% 70%;
+    }    
+    100% {
+        background-size: 120%;
+        background-position: 50% 50%
+    }
+}
+
+@keyframes banner_header {
+    0% {
+     transform: scaleX(4);
+     transform: scaleZ(5);
+    }
+    20% {
+    	transform: scaleX(6);
+    	transform: scaleZ(7);
+    }    
+    40% {
+    	transform: scaleX(5);
+    	transform: scaleZ(3);
+    }
+    60% {
+    	transform: scaleX(3);
+    	transform: scaleZ(6);
+    }
+    80% {
+    	transform: scaleX(6);
+    	transform: scaleZ(7);
+    }    
+    100% {
+    	transform: scaleX(4);
+    	transform: scaleZ(5);
+    }
+}
+@keyframes anim-ramka-4 {
+    0% {
+        transform:scaleX(0);
+        transform-origin: left;
+    }
+    50% {
+        transform:scaleX(1);
+        transform-origin: left;
+    }
+    50.1% {
+        transform:scaleX(1);
+        transform-origin: right;
+    }
+    100% {
+        transform:scaleX(0);
+        transform-origin: right;   

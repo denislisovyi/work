@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Work</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500&family=Oswald:wght@500&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<script type="text/javascript">
+			function getDate()
+			{
+    		var date = new Date();
+    		var hours = date.getHours();
+    		var minutes = date.getMinutes();
+    		var seconds = date.getSeconds();
+    		var today = date.getDate(); 
+    		let month = date.getMonth() + 1; 
+    		var year = date.getFullYear(); 
+    		
+    		if(seconds < 10)
+    		{
+        	seconds = '0' + seconds;
+    		}
+    		if(hours < 10)
+    		{
+        	hours = '0' + hours;
+    		}
+    		if(minutes < 10)
+    		{
+        	minutes = '0' + minutes;
+    		}
+    		if(month < 10)
+    		{
+        	month = '0' + month;
+    		}
+    		if(today < 10)
+    		{
+        	today = '0' + today;
+    		}
+    		document.getElementById('timedisplay').innerHTML = hours + ':' + minutes + ':' + seconds + ' ' + today + '.' + month + '.' + year;
+			document.getElementById('date_footer').innerHTML = today + '.' + month + '.' + year;
+			}
+			setInterval(getDate, 0);
+		</script>
+		<div class="main_container">
+			<header class="header">
+				<img src="img/bg.jpg" class="banner">
+				<a href="#" class="logo">Auchan</a>
+				<a href="#" class="logo_img"><img src="img/logo.png" alt="logo"></a>
+				<div class="time"> 
+					<div id="timedisplay"></div> 
+				</div>	
+			</header>
+			<div class="main">
+				<div class="left_part">
+					<div class="pc">
+						<h2 class="pc_h">PC</h2><br>
+						<p class="p_text pc_text_a"><b>Налаштування ПОС програм</b></p><a href="https://docs.google.com/document/d/10jeKWfbqEEuG0w8PO2UHNRb0tIZF-BEYmCyROR_Jo78/edit" target="_blank">Налаштування ПОС програм</a>
+					    <p class="p_text pc_text_a"><b>Домени різних магазинів</b></p><a href="https://helpdesk.awah-ua.ua.auchan.com/front/domain.php" target="_blank">Домени різних магазинів</a>
+						<p class="p_text pc_text_a"><b>Налаштування 1C</b></p><a href="https://docs.google.com/document/d/1twEy3F6GaMwjLBGgq6JO9RVDAEEMMeGGJM-UX6tLldk/edit" target="_blank">Налаштування 1C</a>
+						<p class="p_text pc_text_a"><b>Зміна паролю</b></p><a href="http://iir/itim/self/Login/Logon.do" target="_blank">Пароль</a>
+						<p class="p_text pc_text_a"><b>PingID</b></p><a href="https://docs.google.com/document/d/1UZJ9tt7lQ4Zr_csI2KmTo83XNgbGjhfQDfURsEjpGPE/edit" target="_blank">PingID</a>
+						<p class="p_text pc_text_a"><b>Встановлення Cybereason EDR</b></p><a href="https://docs.google.com/document/d/1ehYwENRxWf_Nzjt5dA1MNSuQDM1jTqfBTTpZwof6Pds/edit" target="_blank">Встановлення Cybereason EDR</a>
+					</div>
+					<div class="scale" tabindex="1">
+						<h2 class="pc_h">Ваги</h2>
+					    <p class="p_text"><b>Інструкція з первинного налаштування SM300 WiFi:</b> </p><a href="https://docs.google.com/document/d/0BwmA2V68LYMkMU94bkJ3ZlVVNTQ/edit" target="_blank">Інструкція з налаштування SM300 WiFi</a><br>
+					    <p class="p_text"><b>Інструкція з первинного налаштування SM5300 WiFi:</b> </p><a href="https://docs.google.com/document/d/1F0dnrLr2E0UHaf_33lOhH2lE39IJ72bz/edit" target="_blank">Інструкція з налаштування SM5300 WiFi</a><br>
+					    <p class="p_text"><b>Інструкція з налаштування SM5300 WiFi:</b> </p><a href="https://docs.google.com/document/d/1EIn0bPHYT5TX5kfqu6dqaNZFjNbSz7Od/edit" target="_blank">Інструкція з налаштування SM5300 WiFi</a><br> 
+					    <p class="p_text"><b>Інструкція з налаштування штрих-коду на SM5300 WiFi:</b> </p><a href="https://docs.google.com/document/d/1_BZQUg_hoPwIrSKwAHe58QQMtEF25bxk/edit"target="_blank">Інструкція з налаштування SM5300 WiFi</a><br>
+					    <p class="p_text"><b>Інструкція з архівування та відновлення образу карти пам'яті для ваг моделей (SM-5300, SM-5300, SM-5000)</b> </p><a href="https://docs.google.com/document/d/1M21swe7hmogasyDDAKL_AkPQJk4FleEv/edit" id="link" target="_blank">Інструкція з архівування та відновлення образу картки пам'яті</a>
+					</div>
+					<div class="phone">
+						<h2 class="pc_h">Телефони</h2>
+						<p class="p_text"><b>Налаштування смартфонів Samsung</b> </p><a href="https://docs.google.com/document/d/1BhKB4pAjM2zjg2IupfiWd36Bv7t6LojS99dybdFWSuA/edit#heading=h.gjdgxs" target="_blank">Налаштування смартфонів Samsung</a><br>
+						<p class="p_text"><b>Налаштування смартфонів Samsung (не актуал)</b> </p><a href="https://drive.google.com/file/d/1adOwV-bMCfdTRdKzCSEBf4kuvf3OmdlQ/view?usp=sharing" target="_blank">Налаштування смартфонів Samsung</a><br>
+						<p class="p_text"><b>Перевод shared девайсов Airwatch в новую базу</b> </p><a href="https://docs.google.com/document/d/15henSY8yBZR4AjcDNsP25TZQjbaPjk4T00ibRjv-KaY/edit" target="_blank">Налаштування смартфонів Samsung</a><br>
+						<p class="p_text"><b>Таблиця смартфонів</b> </p><a href="https://docs.google.com/spreadsheets/d/1lw1Ped9mWvZ_9xi4mRRd1iyu_tnZtDHL/edit#gid=1582342279" target="_blank">Таблиця смартфонів</a><br>
+						<p class="p_text"><b>Пінкоди для дектових трубок</b> </p><a href="https://docs.google.com/document/d/1XjDDUEZEaZ7OCPSD_sXIQTWL1SbKHMKe/edit" target="_blank">Пінкоди</a><br>
+						<p class="p_text"><b>Номерки на телефони</b> </p><a href="https://docs.google.com/spreadsheets/d/1IDN8b6fdruiQ75Yz1dPGHWDT-Jx6uzpFbyEKs3LDhm4/edit#gid=0" target="_blank">Номерки на телефони</a><br>
+						<p class="p_text"><b>Інструкції та презентації до MyStore</b> </p><a href="https://sites.google.com/auchan.ua/inka/main-page/employee/my-store?authuser=0#h.p007ce80c0c3" target="_blank">MyStore</a><br>
+					</div>
+					<div class="printer" tabindex="2">
+						<h2 class="pc_h">Принтери</h2>
+					</div>	
+					<div class="servers" tabindex="3">
+						<h2 class="pc_h">Серваки</h2>
+						<p class="p_text"><b>10.127.6.70</b> - Сервак Scale Expert</p><br>
+						<p class="p_text"><b>10.127.6.71</b> - ДЦ</p><br>
+						<p class="p_text"><b>10.127.6.71</b> - Принтери пікапів Біличів</p><br>
+					</div>
+					<div class="checkout" tabindex="4">
+						<h2 class="pc_h">Кассы</h2>
+						<p class="p_text"><b>IP Касс:</b> </p><a href="https://docs.google.com/spreadsheets/d/1vHVr2HC1tfEwDgmjy_ngkYnmL4NpXSPueiqzQsDnOcg/edit#gid=789730864" target="_blank">Ukraine POS new IP</a><br>
+						<p class="p_text"><b>Налаштування каси:</b> </p><a href="https://docs.google.com/document/d/1VUrelw0ScaoNu7RFMhTs5PSnPmPo6cvwCB2mBLGM41U/edit" target="_blank">Setup POS from scratch (usb+iso)</a><br>
+						<p class="p_text"><b>Налаштування каси:</b> </p><a href="https://docs.google.com/document/d/12LwuYhdmE_2txebmCKmIWqwf1KXVYQjMsRprUDM1JZo/edit?usp=drivesdk" target="_blank">Інструкція зі зміни IP на касі</a><br>
+					</div>
+					<div class="pricechecker">
+						<h2 class="pc_h">Прайсчекер</h2>
+						<p class="p_text"><b>Налаштування прайсчекеру</b> </p><a href="http://sps-intranet/sites/IT/KB/Pricechecker/Price-checker%20MK500%20configuration%20guide.pdf" target="_blank">Pricechecker setting</a><br>
+						<p class="p_text">Пароль від PDA сканера  <b>127720118</b></p><br>
+						<p>
+					</div>
+					<div class="edisk" tabindex="5">
+						<h2 class="pc_h">Мережеві диски</h2>
+						<p class="p_text"><b>148.7.32.10/common</b></p><br>
+						<p class="p_text"><b>148.239.32.10</b></p><br>
+						<p class="p_text"><b>10.127.6.70</b> - Сервак Scale Expert</p><br>
+						<p class="p_text"><b>148.239.32.10</b> - Шара з папками на DC ЦО</p><br>
+						<p class="p_text"><b>10.127.2.76\Appli_HQ</b> - Шара з папками на DC ЦО</p><br>
+						<p class="p_text"><b>10.127.42.36</b> - Шара з папками на DC ЦО</p>
+					</div>
+				</div>
+				<div class="right_part">
+					<div class="public">
+						<h2 class="pc_h">Загальні</h2>
+						<table border="1">
+							<caption>Таблиця робочих посилань</caption>
+   							<tr>
+    							<th>Номер</th>
+    							<th>Опис</th>
+    							<th>Посилання</th>
+    							<th>Коментар</th>
+   							</tr>
+   							<tr><td>1</td><td>Пошта</td><td><a href="https://mail.google.com/mail/u/0/?tab=mm#inbox" target="_blank">Пошта</a></td><td><textarea rows="6" cols="50" name="text"></textarea></td></tr>
+   							<tr><td>2</td><td>Запити</td><td><a href="https://helpdesk.awah-ua.ua.auchan.com/front/central.php" target="_blank">GLPI</a></td><td><textarea rows="6" cols="50" name="text"></textarea></td></tr>
+   							<tr><td>3</td><td>Таблиця всіх пристроїв</td><td><a href="https://docs.google.com/spreadsheets/d/1xIcsQ8jBc_wsk3RzfmLiLh5xqPNks9FAEuexURgn-II/edit#gid=1415602262" target="_blank">STORE07</a></td><td><textarea rows="6" cols="50" name="text"></textarea></td></tr>
+   							<tr><td>4</td><td>Графік MG2</td><td><a href="https://docs.google.com/spreadsheets/d/1PnmDTfLyp0FLowvzMDQbPBElvXn5Pagsqa8oysHMUK8/edit#gid=0" target="_blank">Графік MG2</a></td><td><textarea rows="5" cols="50" name="text"></textarea></td></tr>
+   							<tr><td>5</td><td>Все, що потрібно знати</td><td><a href="https://docs.google.com/document/d/1AFTDyATT4_KzgIDc0YyJRFCbj3O4oV4T7w6iPJiQ-Uc/edit" target="_blank">All info</a></td><td><textarea rows="6" cols="50" name="text"></textarea></td></tr>
+   							<tr><td>6</td><td>Гугл диск</td><td><a href="https://drive.google.com/drive/my-drive" target="_blank">Google disk</a></td><td><textarea rows="6" cols="50" name="text" ></textarea></td></tr>
+   							<tr><td>7</td><td>IT L1 2023</td><td><a href="https://docs.google.com/spreadsheets/d/1ZhRWCuebWxl3U3CJsmy_jAPCeoGwBGIWzIIxoJLEHA0/edit#gid=1089849596" target="_blank">IT L1 2023</a></td><td><textarea rows="6" cols="50" name="text"></textarea></td></tr>
+   							<tr><td>8</td><td>Телефонний довідник</td><td><a href="https://docs.google.com/spreadsheets/d/1XQOEGAso0HSswTtF2DOY0UD6nn93_EEQF8jKMCdeDog/edit#gid=0" target="_blank">Телефони</a></td><td><textarea rows="6" cols="50" name="text"></textarea></td></tr>
+   							<tr><td>9</td><td>До кого звертатись при поломці</td><td><a href="https://docs.google.com/spreadsheets/d/1t5dFc6pcIurFvh3EHxHgAxXJcNa4FYgbPLT0hgKEbZ0/edit#gid=0" target="_blank">Телефони</a></td><td><textarea rows="6" cols="50" name="text"></textarea></td></tr>
+   							<tr><td>10</td><td>Identity  Services Engine</td><td><a href="https://10.127.16.20/admin/login.jsp" target="_blank">Identity  Services Engine </a></td><td><textarea rows="6" cols="50" name="text"></textarea></td></tr>
+   							<tr><td>11</td><td>Netserv</td><td><a href="http://netserv/" target="_blank">Netserv</a></td><td><textarea rows="6" cols="50" name="text" class="last_textarea"></textarea></td></tr>
+   							<tr><td>12</td><td>Сайт з інструкціями</td><td><a href="http://sps-intranet/sites/IT/KB/default.aspx" target="_blank">Сайт з інструкціями</a></td><td><textarea rows="6" cols="50" name="text" class="last_textarea"></textarea></td></tr>
+						</table>
+					</div>
+					<div class="calculator"> 
+					   <label for="start" class="pc_h">Початок робочого дня:</label> 
+                       <input type="time" id="start" name="start"> <label for="end" class="pc_h">Кінець робочого дня:</label>
+                       <input type="time" id="end" name="end"> <label for="break" class="pc_h">Тривалість перерви (у хвилинах):</label> 
+                       <input type="number" id="break" name="break"> <button onclick="calculateWorkTime()">Розрахувати</button> 
+					   <div id="resultHoursMinutes" class="result_text"></div> 
+                       <div id="resultDecimal" class="result_text"></div>
+				    </div>
+				</div>
+        	</div>
+			<div class="footer">
+				<div class="footer_main">
+					<div class="time_f">
+						<div id="date_footer"></div>	
+					</div>
+					<div class="weather_div">
+						<h1>Погода у Києві</h1> 
+						<div id="weather">
+						</div> 
+					</div>	
+				</div>
+				<div class="footer_end">
+					<p> &copy; Denys Lisovyy </p>
+				</div>	
+			</div>
+		</div>
+		<script>
+			window.addEventListener("scroll",function(){
+				const header = document.querySelector('header');
+				header.classList.toggle('sticky', window.scrollY > 0);
+			})
+		</script>
+		<script src="script.js"></script>
+	</body>	
+</html>
+
+
+
